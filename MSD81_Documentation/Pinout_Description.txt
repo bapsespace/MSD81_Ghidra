@@ -1,0 +1,182 @@
+Plug connector overview
+Number X-pin, colour Description
+X60001 26-pin, grey Component connector DME control unit
+X60002 26-pin, black Component connector DME control unit
+X60003 6-pin, black Component connector DME control unit
+X60004 6-pin, black Component connector DME control unit
+X60005 44-pin, black Component connector DME control unit
+X60006 12-pin, black Component connector DME control unit
+X60007 26-pin, natural Component connector DME control unit
+
+Pin assignments at plug connector X60001
+Pin Type Description /Signal type Connection /Measuring notes
+1 E/A Signal PT-CAN low Powertrain CAN-bus
+2 E Start signal Car access system
+3 E/A BSD signal Battery sensor
+4 E Brake light signal Brake light switch
+5 A Signal, exhaust flap Exhaust flap
+6 E Signal Temperature sensor at radiator outlet Temperature sensor at radiator outlet
+7 E Signal Accelerator pedal module Accelerator pedal module
+8 A Signal Electric fan Electric fan
+9 A Activation Radiator shutter drive unit
+10 M Ground Accelerator pedal module Accelerator pedal module
+11 A Supply Accelerator pedal module Accelerator pedal module
+12 — Not used
+13 A Activation Secondary air pump relay Secondary air pump relay
+14 E/A Signal PT-CAN high Powertrain CAN-bus
+15 E Signal, electronic vehicle immobilizer Car access system
+16 E Brake light test signal Brake light switch
+17 E Signal, rear right wheel speed Connector X10186 (rear right wheel speed)
+18 E Signal, clutch switch Clutch switch module
+19 E Signal Temperature sensor at radiator outlet Temperature sensor at radiator outlet
+20 E Signal Accelerator pedal module Accelerator pedal module
+21 E/A TD signal Connector TD signal
+22 E Supply, terminal 15 Car access system
+23 M Ground Accelerator pedal module Accelerator pedal module
+24 A Supply Accelerator pedal module Accelerator pedal module
+25 E USA Signal Secondary air – hot-film air-mass meter Secondary air – hot-film air-mass meter
+26 A Signal, E-box fan E-box fan
+
+Pin assignments at plug connector X60002
+Pin Type Description /Signal type Connection /Measuring notes
+1 E Wake-up signal, terminal 15 Connector, terminal 15 wake-up
+2 — Not used
+3 — Not used
+4 — Not used
+5 E Signal, oxygen sensor Oxygen sensor 2 before catalytic converter
+6 E Signal, oxygen sensor Oxygen sensor before catalytic converter
+7 E Signal, oxygen sensor Oxygen sensor 2 before catalytic converter
+8 E Signal, oxygen sensor Oxygen sensor before catalytic converter
+9 E Signal, oxygen sensor Oxygen sensor 2 before catalytic converter
+10 M Ground Oxygen sensor before catalytic converter Oxygen sensor before catalytic converter
+11 M Ground Oxygen sensor 2 before catalytic converter Oxygen sensor 2 before catalytic converter
+12 E Signal, oxygen sensor heating Oxygen sensor before catalytic converter
+13 E Signal, oxygen sensor heating Oxygen sensor 2 before catalytic converter
+14 — Not used
+15 — Not used
+16 E USA Signal, fuel tank leak diagnosis pump Diagnostic module for fuel tank leakage
+17 E USA Signal, fuel tank leak diagnosis heating Diagnostic module for fuel tank leakage
+18 E Signal, oxygen sensor Oxygen sensor before catalytic converter
+19 E Signal, oxygen sensor Oxygen sensor 2 after catalytic converter
+20 E Signal, oxygen sensor Oxygen sensor after catalytic converter
+21 — Not used
+22 E USA Signal, fuel tank leak diagnosis valve Diagnostic module for fuel tank leakage
+23 M Ground Oxygen sensor after catalytic converter Oxygen sensor after catalytic converter
+24 M Ground Oxygen sensor 2 after catalytic converter Oxygen sensor 2 after catalytic converter
+25 E Signal, oxygen sensor Oxygen sensor 2 after catalytic converter
+26 E Signal, oxygen sensor Oxygen sensor after catalytic converter
+
+Pin assignments at plug connector X60003
+Pin Type Description /Signal type Connection /Measuring notes
+1 E Supply, terminal 30 Fuse F50 from 03_2007 up to 2007_08
+1 E Supply, terminal 30 Fuse F4 from 2007_09
+1 E Supply, terminal 30 B+ potential distributor up to 03_2007
+2 E Supply, terminal 87 Fuse F78 from 03_2007 up to 2007_08
+2 E Supply, terminal 87 Fuse F37 from 2007_09
+2 E Supply, terminal 87 Fuse F02 up to 03_2007
+3 E Supply, terminal 87 Fuse F78 from 03_2007 up to 2007_08
+3 E Supply, terminal 87 Fuse F02 up to 03_2007
+3 E Supply, terminal 87 from 2007_09
+4 M Ground Ground point
+5 M Ground Ground point
+6 M Ground Ground point
+
+Pin assignments at plug connector X60004
+Pin Type Description /Signal type Connection /Measuring notes
+1 A Activation Ignition coil, cylinder 1
+2 A Activation Ignition coil, cylinder 2
+3 A Activation Ignition coil, cylinder 3
+4 A Activation Ignition coil, cylinder 4
+5 A Activation Ignition coil, cylinder 5
+6 A Activation Ignition coil, cylinder 6
+
+Pin assignments at plug connector X60005
+Pin Type Description /Signal type Connection /Measuring notes
+1 — Not used
+2 — Not used
+3 A Activation Volume control valve
+4 — Not used
+5 — Not used
+6 — Not used
+7 M Ground Low pressure fuel sensor Low pressure fuel sensor
+8 A Supply Low pressure fuel sensor Low pressure fuel sensor
+9 M Ground Intake air temperature/boost pressure sensor Intake air temperature/boost pressure sensor
+10 E Signal Intake air temperature/boost pressure sensor Intake air temperature/boost pressure sensor
+11 A Supply Intake air temperature/boost pressure sensor Intake air temperature/boost pressure sensor
+12 — Not used
+13 A Activation DME relay DME relay
+14 A Supply Motor-driven throttle actuator Motor-driven throttle actuator
+15 E Signal Motor-driven throttle actuator Motor-driven throttle actuator
+16 E Signal Motor-driven throttle actuator Motor-driven throttle actuator
+17 E Signal Intake air temperature/boost pressure sensor Intake air temperature/boost pressure sensor
+18 — Not used
+19 E Signal Double knock sensor Double knock sensor
+20 E Signal Double knock sensor Double knock sensor
+21 — Not used
+22 — Not used
+23 A Signal, fuel tank vent valve Fuel tank vent valve
+24 — Not used
+25 — Not used
+26 — Not used
+27 — Not used
+28 — Not used
+29 E Signal Crankshaft sensor Crankshaft sensor
+30 M Ground Crankshaft sensor Crankshaft sensor
+31 A Supply Intake manifold pressure sensor Intake manifold pressure sensor
+32 M Ground Intake manifold pressure sensor Intake manifold pressure sensor
+33 E Signal Intake manifold pressure sensor Intake manifold pressure sensor
+34 E Signal Low pressure fuel sensor Low pressure fuel sensor
+35 E/A BSD signal Connector BSD signal
+36 E Signal Motor-driven throttle actuator Motor-driven throttle actuator
+37 E Signal Motor-driven throttle actuator Motor-driven throttle actuator
+38 M Ground Motor-driven throttle actuator Motor-driven throttle actuator
+39 — Not used
+40 — Not used
+41 E Signal Double knock sensor Double knock sensor
+42 E Signal Double knock sensor Double knock sensor
+43 — Not used
+44 — Not used
+
+Pin assignments at plug connector X60006
+Pin Type Description /Signal type Connection /Measuring notes
+1 A Positive activation Injection system, cylinder 1
+2 A Positive activation Injection system, cylinder 2
+3 A Positive activation Injection system, cylinder 3
+4 A Positive activation Injection system, cylinder 4
+5 A Positive activation Injection system, cylinder 5
+6 A Positive activation Injection system, cylinder 6
+7 A Negative activation Injection system, cylinder 1
+8 A Negative activation Injection system, cylinder 2
+9 A Negative activation Injection system, cylinder 3
+10 A Negative activation Injection system, cylinder 4
+11 A Negative activation Injection system, cylinder 5
+12 A Negative activation Injection system, cylinder 6
+
+Pin assignments at plug connector X60007
+Pin Type Description /Signal type Connection /Measuring notes
+1 — Not used
+2 — Not used
+3 — Not used
+4 E Signal, coolant temperature Engine coolant temperature sensor
+5 A Activation VANOS solenoid valve, intake VANOS solenoid valve, intake
+6 — Not used
+7 A Activation Wastegate valve
+8 M Ground Rail pressure sensor Rail pressure sensor
+9 E Signal Rail pressure sensor Rail pressure sensor
+10 A Supply Rail pressure sensor Rail pressure sensor
+11 E Signal Camshaft sensor I Camshaft sensor I
+12 E Signal Camshaft sensor II Camshaft sensor II
+13 E Signal, oil pressure switch Oil pressure switch
+14 A Activation Wastegate valve 2
+15 — Not used
+16 — Not used
+17 M Ground Engine coolant temperature sensor Engine coolant temperature sensor
+18 A Activation VANOS solenoid valve, exhaust VANOS solenoid valve, exhaust
+19 E Signal Characteristic map thermostat Characteristic map thermostat
+20 — Not used
+21 — Not used
+22 — Not used
+23 — Not used
+24 M Ground Camshaft sensor I Camshaft sensor I
+25 M Ground Camshaft sensor II Camshaft sensor II
+26 E/A BSD signal Electric coolant pump
