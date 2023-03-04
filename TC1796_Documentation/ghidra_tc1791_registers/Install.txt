@@ -1,7 +1,0 @@
-Copy
-tc179x.pspec
-
-Replace
-tricore.ldefs
-
-to: ghidra_X.X.X_PUBLIC/Ghidra/Processors/tricore/data/languages/
