@@ -1,0 +1,6 @@
+Global Registers set value
+
+a0 d000 8000
+a1 a004 8000
+a8 d000 8000
+a9 0000 0000

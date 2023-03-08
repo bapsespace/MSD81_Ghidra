@@ -1,0 +1,9 @@
+ECU_STATE
+
+0	ENG_STOP --> ignition key is on but engine not turning
+1	RUN_ENG --> engine is turning but no crankshaft sync (cranking counting tooth to syncornise)
+2	SYN_ENG_IGK_ON --> engine is sincronysed ignition key on (ready to start)
+3	SYN_ENG_IGK_OFF --> engine is sincronysed ignition key off (just turned off or stopped cranking)
+4	PWL --> preparing to stop the engine 
+5	ENG_LOCK --> lock by immobilizer
+6	WAKE_UP --> after ecu is turned off and you unlock car 

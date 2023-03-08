@@ -1,0 +1,1032 @@
+* DAMOS-Austauschdatei
+* Erstellt von ADM V10.0.34
+* Erstellungsdatum: 20.02.2007 13:25:16
+*
+* Projekt: MSD81 6 cyl (4CC)\4CCXE50S
+* Datensatz: XE500000\XE500000_1
+
+KONSERVIERUNG_FORMAT 2.0
+
+* Address EPK: 0xA0800008
+* EPK: 4CCXE500
+* Memory segments:
+*  VARIABLES-INTERN-0xD0000000-0x10000
+*  DATA-EXTERN-0xA0800000-0x3E700
+*  VARIABLES-EXTERN-0xC0000000-0x10000
+*  VARIABLES-INTERN-0xD0000000-0x10000
+
+
+FUNKTIONEN
+   FKT Piez_pow_off_can_n_gai_cal__708T "" ""
+   FKT Injr_needle_lift_control__7081 "" ""
+   FKT Inj_needle_lift_co_AI__7087 "" ""
+   FKT Injr_needle_lift_adj__706S "" ""
+   FKT Transfer_to_basic_sw__706K "" ""
+   FKT Final_Inj_Timing__7054 "" ""
+   FKT CYBL_Coord_Inj_Time_Cor_Fac_CYBL "" "Coord_Inj_Time_Cor_Fac_CYBL"
+   FKT Inj_valve_diagnosis__A00B "" ""
+   FKT Application_Incidences__706N "" ""
+   FKT C_7_INJR "" ""
+END
+
+FESTWERT c_chr_inj_ref 
+   LANGNAME "Calibrable reference charge value used for Integrator Gain Calibration"
+   DISPLAYNAME "C_CHR_INJ_REF"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "uAs"
+   WERT 565.600
+END
+
+FESTWERT c_chr_trim_max_plaus_beg 
+   LANGNAME "Maximum plausible value for trim pulse charge: begin of trim and end of offset cancellation"
+   DISPLAYNAME "C_CHR_TRIM_MAX_PLAUS_BEG"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "uAs"
+   WERT 320.000
+END
+
+FESTWERT c_chr_trim_max_plaus_end 
+   LANGNAME "Maximal plausible value for trim pulse charge: end of gain calibration"
+   DISPLAYNAME "C_CHR_TRIM_MAX_PLAUS_END"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "uAs"
+   WERT 1000.000
+END
+
+FESTWERT c_chr_trim_min_plaus_beg 
+   LANGNAME "Minimum plausible value for trim pulse charge: begin of trim and end of offset cancellation"
+   DISPLAYNAME "C_CHR_TRIM_MIN_PLAUS_BEG"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "uAs"
+   WERT 0.000
+END
+
+FESTWERT c_chr_trim_min_plaus_end 
+   LANGNAME "Minimum plausible value for trim pulse charge: end of gain calibration"
+   DISPLAYNAME "C_CHR_TRIM_MIN_PLAUS_END"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "uAs"
+   WERT 400.000
+END
+
+FESTWERT c_cur_cha_ofs_cnl_max 
+   LANGNAME "Maximal threshold for offset cancelation charge current"
+   DISPLAYNAME "C_CUR_CHA_OFS_CNL_MAX"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "A"
+   WERT 0.499968
+END
+
+FESTWERT c_cur_cha_ofs_cnl_min 
+   LANGNAME "Minimal threshold for offset cancelation charge current"
+   DISPLAYNAME "C_CUR_CHA_OFS_CNL_MIN"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "A"
+   WERT -0.499968
+END
+
+FESTWERT c_cur_cha_ofs_pi_ctl_i_lim_max 
+   LANGNAME "Upper limit for the integral part of the current charge offset cancellation PI controller"
+   DISPLAYNAME "C_CUR_CHA_OFS_PI_CTL_I_LIM_MAX"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "A"
+   WERT 0.499968
+END
+
+FESTWERT c_cur_cha_ofs_pi_ctl_i_lim_min 
+   LANGNAME "Lower limit for the integral part of the current charge offset cancellation PI controller"
+   DISPLAYNAME "C_CUR_CHA_OFS_PI_CTL_I_LIM_MIN"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "A"
+   WERT -0.499968
+END
+
+FESTWERT c_egy_bas_inj_sp_h 
+   LANGNAME "Energy base value for piezo injector at high needle lift."
+   DISPLAYNAME "C_EGY_BAS_INJ_SP_H"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "mJ"
+   WERT 59.802
+END
+
+FESTWERT c_egy_ctl_ena_thd_max 
+   LANGNAME "Upper energy threshold to activate controller"
+   DISPLAYNAME "C_EGY_CTL_ENA_THD_MAX"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "mJ"
+   WERT 79.000
+END
+
+FESTWERT c_egy_ctl_ena_thd_min 
+   LANGNAME "Lower energy threshold to activate controller"
+   DISPLAYNAME "C_EGY_CTL_ENA_THD_MIN"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "mJ"
+   WERT 40.000
+END
+
+FESTWERT c_egy_ctl_i_gain 
+   LANGNAME "Integral gain for piezo energy controller."
+   DISPLAYNAME "C_EGY_CTL_I_GAIN"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.01001
+END
+
+FESTWERT c_egy_ctl_p_gain 
+   LANGNAME "Proportional gain for energy controller."
+   DISPLAYNAME "C_EGY_CTL_P_GAIN"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.01001
+END
+
+FESTWERT c_egy_inj_max_lim 
+   LANGNAME "Maximum value for voltage dependent injector energy limiter."
+   DISPLAYNAME "C_EGY_INJ_MAX_LIM"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "mJ"
+   WERT 76.000
+END
+
+FESTWERT c_egy_sp_iv_ext_adj[0] 
+   LANGNAME "Default value for external energy setpoint for piezo injector energy controller calculation"
+   DISPLAYNAME "C_EGY_SP_IV_EXT_ADJ[0]"
+   FUNKTION Inj_needle_lift_co_AI__7087 
+   EINHEIT_W "mJ"
+   WERT 59.802
+END
+
+FESTWERT c_egy_sp_iv_ext_adj[1] 
+   LANGNAME "Default value for external energy setpoint for piezo injector energy controller calculation"
+   DISPLAYNAME "C_EGY_SP_IV_EXT_ADJ[1]"
+   FUNKTION Inj_needle_lift_co_AI__7087 
+   EINHEIT_W "mJ"
+   WERT 59.802
+END
+
+FESTWERT c_egy_sp_iv_ext_adj[2] 
+   LANGNAME "Default value for external energy setpoint for piezo injector energy controller calculation"
+   DISPLAYNAME "C_EGY_SP_IV_EXT_ADJ[2]"
+   FUNKTION Inj_needle_lift_co_AI__7087 
+   EINHEIT_W "mJ"
+   WERT 59.802
+END
+
+FESTWERT c_egy_sp_iv_ext_adj[3] 
+   LANGNAME "Default value for external energy setpoint for piezo injector energy controller calculation"
+   DISPLAYNAME "C_EGY_SP_IV_EXT_ADJ[3]"
+   FUNKTION Inj_needle_lift_co_AI__7087 
+   EINHEIT_W "mJ"
+   WERT 59.802
+END
+
+FESTWERT c_egy_sp_iv_ext_adj[4] 
+   LANGNAME "Default value for external energy setpoint for piezo injector energy controller calculation"
+   DISPLAYNAME "C_EGY_SP_IV_EXT_ADJ[4]"
+   FUNKTION Inj_needle_lift_co_AI__7087 
+   EINHEIT_W "mJ"
+   WERT 59.802
+END
+
+FESTWERT c_egy_sp_iv_ext_adj[5] 
+   LANGNAME "Default value for external energy setpoint for piezo injector energy controller calculation"
+   DISPLAYNAME "C_EGY_SP_IV_EXT_ADJ[5]"
+   FUNKTION Inj_needle_lift_co_AI__7087 
+   EINHEIT_W "mJ"
+   WERT 59.802
+END
+
+FESTWERT c_egy_step_inj_cha_grd[0] 
+   LANGNAME "Piezo injector energy charge and discharge gradient for a single step"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD[0]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 50.000
+END
+
+FESTWERT c_egy_step_inj_cha_grd[1] 
+   LANGNAME "Piezo injector energy charge and discharge gradient for a single step"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD[1]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 50.000
+END
+
+FESTWERT c_egy_step_inj_cha_grd[2] 
+   LANGNAME "Piezo injector energy charge and discharge gradient for a single step"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD[2]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 50.000
+END
+
+FESTWERT c_egy_step_inj_cha_grd[3] 
+   LANGNAME "Piezo injector energy charge and discharge gradient for a single step"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD[3]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 50.000
+END
+
+FESTWERT c_egy_step_inj_cha_grd[4] 
+   LANGNAME "Piezo injector energy charge and discharge gradient for a single step"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD[4]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 50.000
+END
+
+FESTWERT c_egy_step_inj_cha_grd[5] 
+   LANGNAME "Piezo injector energy charge and discharge gradient for a single step"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD[5]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 50.000
+END
+
+FESTWERT c_egy_step_inj_cha_grd_max_hom 
+   LANGNAME "Upper threshold of energy charge gradient for a single step - homogenous operation"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD_MAX_HOM"
+   FUNKTION Injr_needle_lift_adj__706S 
+   EINHEIT_W "%"
+   WERT 72.998
+END
+
+FESTWERT c_egy_step_inj_cha_grd_max_s 
+   LANGNAME "Upper threshold of energy charge gradient for a single step - stratified operation"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD_MAX_S"
+   FUNKTION Injr_needle_lift_adj__706S 
+   EINHEIT_W "%"
+   WERT 72.998
+END
+
+FESTWERT c_egy_step_inj_cha_grd_min_hom 
+   LANGNAME "Lower threshold of energy charge gradient for a single step - homogenous operation"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD_MIN_HOM"
+   FUNKTION Injr_needle_lift_adj__706S 
+   EINHEIT_W "%"
+   WERT 25.000
+END
+
+FESTWERT c_egy_step_inj_cha_grd_min_s 
+   LANGNAME "Lower threshold of energy charge gradient for a single step - stratified operation"
+   DISPLAYNAME "C_EGY_STEP_INJ_CHA_GRD_MIN_S"
+   FUNKTION Injr_needle_lift_adj__706S 
+   EINHEIT_W "%"
+   WERT 25.000
+END
+
+FESTWERT c_fac_cor_egy_step_inj_dcha_grd 
+   LANGNAME "Multiplicative correction factor for cylinder balancing influence on discharge gradient calculation"
+   DISPLAYNAME "C_FAC_COR_EGY_STEP_INJ_DCHA_GRD"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 0.94000
+END
+
+FESTWERT c_fac_egy_pwm_ad_max 
+   LANGNAME "Maximal value of convertion factor EGY to % PWM"
+   DISPLAYNAME "C_FAC_EGY_PWM_AD_MAX"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 1.00000
+END
+
+FESTWERT c_fac_egy_pwm_ad_min 
+   LANGNAME "Minimal value of convertion factor EGY to % PWM"
+   DISPLAYNAME "C_FAC_EGY_PWM_AD_MIN"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.29999
+END
+
+FESTWERT c_fac_egy_pwm_man[0] 
+   LANGNAME "Manually set conversion factor: EGY to % PWM for piezo injector."
+   DISPLAYNAME "C_FAC_EGY_PWM_MAN[0]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.57999
+END
+
+FESTWERT c_fac_egy_pwm_man[1] 
+   LANGNAME "Manually set conversion factor: EGY to % PWM for piezo injector."
+   DISPLAYNAME "C_FAC_EGY_PWM_MAN[1]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.57999
+END
+
+FESTWERT c_fac_egy_pwm_man[2] 
+   LANGNAME "Manually set conversion factor: EGY to % PWM for piezo injector."
+   DISPLAYNAME "C_FAC_EGY_PWM_MAN[2]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.57999
+END
+
+FESTWERT c_fac_egy_pwm_man[3] 
+   LANGNAME "Manually set conversion factor: EGY to % PWM for piezo injector."
+   DISPLAYNAME "C_FAC_EGY_PWM_MAN[3]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.57999
+END
+
+FESTWERT c_fac_egy_pwm_man[4] 
+   LANGNAME "Manually set conversion factor: EGY to % PWM for piezo injector."
+   DISPLAYNAME "C_FAC_EGY_PWM_MAN[4]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.57999
+END
+
+FESTWERT c_fac_egy_pwm_man[5] 
+   LANGNAME "Manually set conversion factor: EGY to % PWM for piezo injector."
+   DISPLAYNAME "C_FAC_EGY_PWM_MAN[5]"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%/mJ"
+   WERT 0.57999
+END
+
+FESTWERT c_fac_fil_chr_trim 
+   LANGNAME "Filter factor for trim pulse charge difference"
+   DISPLAYNAME "C_FAC_FIL_CHR_TRIM"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "-"
+   WERT 0.02000
+END
+
+FESTWERT c_fac_fil_v_adc_ref 
+   LANGNAME "Filter constant of PT1-filter for measured ADC reference calibration voltage"
+   DISPLAYNAME "C_FAC_FIL_V_ADC_REF"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 0.02000
+END
+
+FESTWERT c_fac_lpf_egy_pwm_ad 
+   LANGNAME "Factor for PT1-filter for calculation of FAC_EGY_PWM_AD"
+   DISPLAYNAME "C_FAC_LPF_EGY_PWM_AD"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W ""
+   WERT 0.051
+END
+
+FESTWERT c_ki_pi_ctl_cur_cha_ofs_cnl 
+   LANGNAME "Coefficient for the integral part of the PI controller used for the offset cancellation charge current"
+   DISPLAYNAME "C_KI_PI_CTL_CUR_CHA_OFS_CNL"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "1/(탎*s)"
+   WERT 0.010001
+END
+
+FESTWERT c_kr_pi_ctl_cur_cha_ofs_cnl 
+   LANGNAME "Coefficient for the proportional part of the PI controller used for the offset cancellation charge current"
+   DISPLAYNAME "C_KR_PI_CTL_CUR_CHA_OFS_CNL"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "1/탎"
+   WERT 0.020001
+END
+
+FESTWERT c_max_inj_egy_level_cor 
+   LANGNAME "Maximum correction value of injector energy level"
+   DISPLAYNAME "C_MAX_INJ_EGY_LEVEL_COR"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 24.994
+END
+
+FESTWERT c_min_inj_egy_level_cor 
+   LANGNAME "Minimum correction value of injector energy level"
+   DISPLAYNAME "C_MIN_INJ_EGY_LEVEL_COR"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT -25.000
+END
+
+FESTWERT c_n_min_ofs_cnl_cha_cal 
+   LANGNAME "Minimum engine speed to activate offset cancellation and gain calibration"
+   DISPLAYNAME "C_N_MIN_OFS_CNL_CHA_CAL"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "rpm"
+   WERT 500
+END
+
+FESTWERT c_nr_cyl_ofs_inh_iv_dyn 
+   LANGNAME "Cylinder offset for destination of current cylinder number for dynamic fuel shut off"
+   DISPLAYNAME "C_NR_CYL_OFS_INH_IV_DYN"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT c_pwm_fac_cor_egy_grd_dcha_l 
+   LANGNAME "Factor to correct the energy discharge gradient for low needle lift"
+   DISPLAYNAME "C_PWM_FAC_COR_EGY_GRD_DCHA_L"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 1.04001
+END
+
+FESTWERT c_pwm_fac_cor_egy_grd_h_l 
+   LANGNAME "Factor to correct the energy gradient for low needle lift regarding the energy gradient for high needle lift"
+   DISPLAYNAME "C_PWM_FAC_COR_EGY_GRD_H_L"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 0.95001
+END
+
+FESTWERT c_pwm_lim_v_max_i_gain 
+   LANGNAME "Integral gain for pwm limiting related to stack voltage"
+   DISPLAYNAME "C_PWM_LIM_V_MAX_I_GAIN"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 0.10001
+END
+
+FESTWERT c_pwm_ofs_cor_egy_grd_dcha_l 
+   LANGNAME "Offset to correct the energy discharge gradient for low needle lift"
+   DISPLAYNAME "C_PWM_OFS_COR_EGY_GRD_DCHA_L"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 0.000
+END
+
+FESTWERT c_pwm_ofs_cor_egy_grd_h_l 
+   LANGNAME "Offset to correct the energy gradient for low needle lift regarding the energy gradient for high needle lift"
+   DISPLAYNAME "C_PWM_OFS_COR_EGY_GRD_H_L"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 0.000
+END
+
+FESTWERT c_pwm_ofs_cor_step_inj_dcha_grd 
+   LANGNAME "Offset of injector discharge gradiant"
+   DISPLAYNAME "C_PWM_OFS_COR_STEP_INJ_DCHA_GRD"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "%"
+   WERT 0.000
+END
+
+FESTWERT c_seg_ctr_egy_ad_ena 
+   LANGNAME "Number of segments for activation of piezo energy adaptation"
+   DISPLAYNAME "C_SEG_CTR_EGY_AD_ENA"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 150
+END
+
+FESTWERT c_soi_ext_adj 
+   LANGNAME "Start of injection for external adjustment (service tool intervention)  "
+   DISPLAYNAME "C_SOI_EXT_ADJ"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "캜RK"
+   WERT 0.000
+END
+
+FESTWERT c_soi_min_upd_pls_sngh 
+   LANGNAME "Minimum start (limit) of injection for makeup pulse at homogenous single injection mode"
+   DISPLAYNAME "C_SOI_MIN_UPD_PLS_SNGH"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "캜RK"
+   WERT 0.000
+END
+
+FESTWERT c_t_cha_fall_h 
+   LANGNAME "Charge fall time for injector charge current at high needle lift"
+   DISPLAYNAME "C_T_CHA_FALL_H"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 25.2
+END
+
+FESTWERT c_t_cha_fall_l 
+   LANGNAME "Charge fall time for injector charge current at low needle lift"
+   DISPLAYNAME "C_T_CHA_FALL_L"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 25.2
+END
+
+FESTWERT c_t_cha_per_h 
+   LANGNAME "Piezo injector charging time for high injector needle lift"
+   DISPLAYNAME "C_T_CHA_PER_H"
+   FUNKTION Final_Inj_Timing__7054 
+   EINHEIT_W "탎"
+   WERT 212.0
+END
+
+FESTWERT c_t_cha_per_l 
+   LANGNAME "Piezo injector charging time for low injector needle lift"
+   DISPLAYNAME "C_T_CHA_PER_L"
+   FUNKTION Final_Inj_Timing__7054 
+   EINHEIT_W "탎"
+   WERT 145.0
+END
+
+FESTWERT c_t_cha_rise_h 
+   LANGNAME "Charge rise time for injector charge current at high needle lift"
+   DISPLAYNAME "C_T_CHA_RISE_H"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 12.6
+END
+
+FESTWERT c_t_cha_rise_l 
+   LANGNAME "Charge rise time for injector charge current at low needle lift"
+   DISPLAYNAME "C_T_CHA_RISE_L"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 12.6
+END
+
+FESTWERT c_t_dcha_fall_h 
+   LANGNAME "Discharge fall time for injector discharge current at high needle lift"
+   DISPLAYNAME "C_T_DCHA_FALL_H"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 18.9
+END
+
+FESTWERT c_t_dcha_fall_l 
+   LANGNAME "Discharge fall time for injector discharge current at low needle lift"
+   DISPLAYNAME "C_T_DCHA_FALL_L"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 18.9
+END
+
+FESTWERT c_t_dcha_rise_h 
+   LANGNAME "Discharge rise time for injector discharge current at high needle lift"
+   DISPLAYNAME "C_T_DCHA_RISE_H"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 6.4
+END
+
+FESTWERT c_t_dcha_rise_l 
+   LANGNAME "Discharge rise time for injector discharge current at low needle lift"
+   DISPLAYNAME "C_T_DCHA_RISE_L"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "탎"
+   WERT 6.4
+END
+
+FESTWERT c_t_min_dif_cha_dcha 
+   LANGNAME "Minimum time between end of charging procedure and begin of discharging procedure for injection valve"
+   DISPLAYNAME "C_T_MIN_DIF_CHA_DCHA"
+   FUNKTION Final_Inj_Timing__7054 
+   EINHEIT_W "탎"
+   WERT 3.0
+END
+
+FESTWERT c_t_ofs_upd_ign_inj_syn 
+   LANGNAME "Task run time offset for a synchronized update of ignition and injection parameters to I/O-SW"
+   DISPLAYNAME "C_T_OFS_UPD_IGN_INJ_SYN"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "ms"
+   WERT 2.000
+END
+
+FESTWERT c_ti_egy_ctl_clc_min 
+   LANGNAME "Minimum injection time limit for calculation of energy control"
+   DISPLAYNAME "C_TI_EGY_CTL_CLC_MIN"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "ms"
+   WERT 0.240
+END
+
+FESTWERT c_v_adc_ref_inj 
+   LANGNAME "ADC reference calibration voltage"
+   DISPLAYNAME "C_V_ADC_REF_INJ"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "V"
+   WERT 3.1000
+END
+
+FESTWERT c_v_adc_ref_mes_inj_max_plaus 
+   LANGNAME "Maximum plausible value of measured ADC reference calibration voltage"
+   DISPLAYNAME "C_V_ADC_REF_MES_INJ_MAX_PLAUS"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "V"
+   WERT 3.1999
+END
+
+FESTWERT c_v_adc_ref_mes_inj_min_plaus 
+   LANGNAME "Minimum plausible value of measured ADC reference calibration voltage"
+   DISPLAYNAME "C_V_ADC_REF_MES_INJ_MIN_PLAUS"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "V"
+   WERT 3.0000
+END
+
+GRUPPENKENNLINIE ip_egy_level_iv_bal_conv 8
+   LANGNAME "Index table for cylinder balancing injection valve energy level conversion"
+   DISPLAYNAME "IP_EGY_LEVEL_IV_BAL_CONV"
+   FUNKTION CYBL_Coord_Inj_Time_Cor_Fac_CYBL 
+   EINHEIT_X "-"
+   EINHEIT_W "%"
+*SSTX	ldp_fac_ti_sum_bal_ip_egy_bal
+   ST/X   -0.43399   -0.20001   -0.10001   -0.04999   0.04999   0.10001   
+   ST/X   0.20001   0.43399   
+   WERT   -50.000   -23.041   -11.517   -5.756   5.756   11.517   
+   WERT   23.041   50.000   
+END
+
+GRUPPENKENNFELD ip_egy_step_inj_cha_grd_ofs 6 4
+   LANGNAME "Piezo injector energy charge and discharge gradient offset for a single step"
+   DISPLAYNAME "IP_EGY_STEP_INJ_CHA_GRD_OFS"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_X "hPa"
+   EINHEIT_Y "캜"
+   EINHEIT_W "%"
+*SSTX	ldp_fup_ip_egy_step_inj_cha_grd
+*SSTY	ldp_tfu_inj_ip_egy_step_inj_cha
+   ST/X   4998.9   49999.9   99999.9   149999.8   199999.7   249999.7   
+   ST/Y   -30.00
+   WERT   14.001   14.001   14.001   14.001   14.001   14.001   
+   ST/Y   20.25
+   WERT   14.001   14.001   14.001   14.001   14.001   14.001   
+   ST/Y   80.25
+   WERT   14.001   14.001   14.001   14.001   14.001   14.001   
+   ST/Y   120.00
+   WERT   14.001   14.001   14.001   14.001   14.001   14.001   
+END
+
+GRUPPENKENNLINIE ip_eoi_inj_upd_psn 6
+   LANGNAME "End of injection position for autonomous generated update pulses"
+   DISPLAYNAME "IP_EOI_INJ_UPD_PSN"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "rpm"
+   EINHEIT_W "캜RK"
+*SSTX	ldp_n_32_ip_eoi_inj_upd_psn
+   ST/X   512   992   1504   2016   2496   3488   
+   WERT   300.000   300.000   300.000   300.000   300.000   300.000   
+END
+
+GRUPPENKENNFELD ip_fac_add_pulse 7 7
+   LANGNAME "Weighting factor for additive pulses in case of injection time update at transient conditions"
+   DISPLAYNAME "IP_FAC_ADD_PULSE"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "rpm"
+   EINHEIT_Y "캜"
+   EINHEIT_W "-"
+*SSTX	ldp_n_32_ip_fac_add_pulse
+*SSTY	ldp_tco_ip_fac_add_pulse
+   ST/X   992   1504   2240   3008   4000   5024   
+   ST/X   6016   
+   ST/Y   -20.25
+   WERT   1.992188   1.992188   1.000000   0.000000   0.000000   0.000000   
+   WERT   0.000000   
+   ST/Y   -9.75
+   WERT   1.992188   1.992188   1.000000   0.000000   0.000000   0.000000   
+   WERT   0.000000   
+   ST/Y   0.00
+   WERT   1.992188   1.992188   1.000000   0.000000   0.000000   0.000000   
+   WERT   0.000000   
+   ST/Y   20.25
+   WERT   1.992188   1.992188   1.000000   0.000000   0.000000   0.000000   
+   WERT   0.000000   
+   ST/Y   39.75
+   WERT   1.992188   1.992188   1.000000   0.000000   0.000000   0.000000   
+   WERT   0.000000   
+   ST/Y   60.00
+   WERT   1.992188   1.992188   1.000000   0.000000   0.000000   0.000000   
+   WERT   0.000000   
+   ST/Y   90.00
+   WERT   1.992188   1.992188   1.000000   0.000000   0.000000   0.000000   
+   WERT   0.000000   
+END
+
+GRUPPENKENNLINIE ip_fac_ti_cor_iv_egy_rng_l 12
+   LANGNAME "Multiplicative injection time correction factor for corrections in case of injector low lift depending on FUP"
+   DISPLAYNAME "IP_FAC_TI_COR_IV_EGY_RNG_L"
+   FUNKTION Injr_needle_lift_adj__706S 
+   EINHEIT_X "hPa"
+   EINHEIT_W "-"
+*SSTX	ldp_fup_fac_ti_cor_iv_egy_rng_l
+   ST/X   4001.3   9997.9   15002.1   20001.0   29998.9   45001.0   
+   ST/X   59997.8   90002.0   120000.9   159997.7   199999.7   249999.7   
+   WERT   1.00000   1.00000   1.00000   1.00000   1.00000   0.88000   
+   WERT   0.90500   0.95499   0.98499   1.01999   1.00000   1.00000   
+END
+
+GRUPPENKENNLINIE ip_pwm_dcdc_pctl 6
+   LANGNAME "Pulse wide modulated pre control for DCDC converter"
+   DISPLAYNAME "IP_PWM_DCDC_PCTL"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "캜"
+   EINHEIT_W "%"
+*SSTX	ldpm_tecu_dcdc_pctl
+   ST/X   -48.00   -39.75   -9.75   0.00   69.75   142.50   
+   WERT   80.000   80.000   69.000   69.000   69.000   69.000   
+END
+
+GRUPPENKENNLINIE ip_t_rls_dly_t_dcha 6
+   LANGNAME "Release Delay time depending on the discharge time"
+   DISPLAYNAME "IP_T_RLS_DLY_T_DCHA"
+   FUNKTION Final_Inj_Timing__7054 
+   EINHEIT_X "탎"
+   EINHEIT_W "탎"
+*SSTX	ldp_t_dcha_ip_t_rls_dly
+   ST/X   80.0   100.0   130.0   160.0   200.0   220.0   
+   WERT   90.0   90.0   90.0   120.0   160.0   180.0   
+END
+
+GRUPPENKENNLINIE ip_ti_add_dly_hpdi_egy_h 6
+   LANGNAME "Injector dead time correction for high energy range of the injector"
+   DISPLAYNAME "IP_TI_ADD_DLY_HPDI_EGY_H"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "hPa"
+   EINHEIT_W "탎"
+*SSTX	ldpm_prs_dec_inj_1_injr
+   ST/X   5301.4   9997.9   40002.1   99999.9   140001.9   199999.7   
+   WERT   -140   -150   -170   -95   -69   -40   
+END
+
+GRUPPENKENNLINIE ip_ti_add_dly_hpdi_egy_l 6
+   LANGNAME "Injector dead time correction for low energy range of the injector"
+   DISPLAYNAME "IP_TI_ADD_DLY_HPDI_EGY_L"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "hPa"
+   EINHEIT_W "탎"
+*SSTX	ldpm_prs_dec_inj_1_injr
+   ST/X   5301.4   9997.9   40002.1   99999.9   140001.9   199999.7   
+   WERT   -154   -155   -134   -75   -49   -20   
+END
+
+GRUPPENKENNLINIE ip_ti_add_pulse_min 6
+   LANGNAME "Minimum injection time for additive injection pulse, homogeneous mode"
+   DISPLAYNAME "IP_TI_ADD_PULSE_MIN"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "hPa"
+   EINHEIT_W "ms"
+*SSTX	ldpm_prs_dec_inj_1_injr
+   ST/X   5301.4   9997.9   40002.1   99999.9   140001.9   199999.7   
+   WERT   0.100   0.100   0.100   0.100   0.100   0.100   
+END
+
+GRUPPENKENNLINIE ip_v_iv_max 6
+   LANGNAME "Maximum allowed voltage on piezo stack before limiting"
+   DISPLAYNAME "IP_V_IV_MAX"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_X "캜"
+   EINHEIT_W "V"
+*SSTX	ldp_tfu_inj_ip_v_iv_max
+   ST/X   -30.00   0.00   45.00   84.75   105.00   142.50   
+   WERT   190.00   190.00   190.00   190.00   190.00   190.00   
+END
+
+FESTWERT lc_cur_cha_inj_h_l_sel_ena 
+   LANGNAME "Flag to enable page selection for high and low injector needle lift"
+   DISPLAYNAME "LC_CUR_CHA_INJ_H_L_SEL_ENA"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_cur_cha_ofs_cnl_ena 
+   LANGNAME "Enables the PI controller used for the offset cancellation of the charge current"
+   DISPLAYNAME "LC_CUR_CHA_OFS_CNL_ENA"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_cur_cha_ofs_cnl_rst 
+   LANGNAME "Reset the offset cancellation current and the integral part of the pi controller"
+   DISPLAYNAME "LC_CUR_CHA_OFS_CNL_RST"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_cur_ofs_cnl_cha_cal_ena 
+   LANGNAME "Switch to enable piezo power stage offset cancellation and gain calibration"
+   DISPLAYNAME "LC_CUR_OFS_CNL_CHA_CAL_ENA"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_cur_slop_cor_chr_ref 
+   LANGNAME "Selects between the calibrable and the configurable charge reference"
+   DISPLAYNAME "LC_CUR_SLOP_COR_CHR_REF"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_diag_inh_iv_sc 
+   LANGNAME "Switch to disable the detailed injection valve short circuit diagnosis"
+   DISPLAYNAME "LC_DIAG_INH_IV_SC"
+   FUNKTION Inj_valve_diagnosis__A00B 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_egy_rng_iv_cyl_ind_di 
+   LANGNAME "Switch to disable cylinder individual injector needle lift"
+   DISPLAYNAME "LC_EGY_RNG_IV_CYL_IND_DI"
+   FUNKTION Injr_needle_lift_adj__706S 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_egy_sp_iv_ext_adj_ena 
+   LANGNAME "Logical constant to enable external energy setpoint calculation for piezo injector energy controller"
+   DISPLAYNAME "LC_EGY_SP_IV_EXT_ADJ_ENA"
+   FUNKTION Inj_needle_lift_co_AI__7087 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_egy_sp_iv_ext_ena 
+   LANGNAME "Logical constant to enable external energy setpoint for injector energy controller"
+   DISPLAYNAME "LC_EGY_SP_IV_EXT_ENA"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_egy_step_ctl_dyn_ena 
+   LANGNAME "Enable complete piezo energy controller"
+   DISPLAYNAME "LC_EGY_STEP_CTL_DYN_ENA"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_ena_adap_egy_ctl 
+   LANGNAME "Enable new adaptation of piezo energy controller values after engine start"
+   DISPLAYNAME "LC_ENA_ADAP_EGY_CTL"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_fac_cor_slop_cha_cal_ena 
+   LANGNAME "Actives the correction of the mesaured charge in relation to a a reference charge"
+   DISPLAYNAME "LC_FAC_COR_SLOP_CHA_CAL_ENA"
+   FUNKTION Piez_pow_off_can_n_gai_cal__708T 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+FESTWERT lc_ign_upd_stat_ena 
+   LANGNAME "Flag to enable static update calculation of ignition angle (at ignition/injection synchronisation)"
+   DISPLAYNAME "LC_IGN_UPD_STAT_ENA"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_inj_pls_upd_mod 
+   LANGNAME "Logical constant for selection of injection pulse update mode"
+   DISPLAYNAME "LC_INJ_PLS_UPD_MOD"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   TEXT "AUTONOMOUS"
+END
+
+FESTWERT lc_inj_upd_old_mod_ena 
+   LANGNAME "Flag to enable injection data update of old injection mode in case of mode switch failed"
+   DISPLAYNAME "LC_INJ_UPD_OLD_MOD_ENA"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_iv_add_pls_mplh_ena 
+   LANGNAME "Switch to enable pulse update functionality at homogenous multiple injection"
+   DISPLAYNAME "LC_IV_ADD_PLS_MPLH_ENA"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_iv_add_pls_sngh_ena 
+   LANGNAME "Switch to enable makeup pulse functionality at homogenous single injection"
+   DISPLAYNAME "LC_IV_ADD_PLS_SNGH_ENA"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_v_adc_ref_cal_inj 
+   LANGNAME "Switch ADC calibration voltage reference between calibratable voltage (=1) and configurable voltage (=0)"
+   DISPLAYNAME "LC_V_ADC_REF_CAL_INJ"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 0
+END
+
+FESTWERT lc_v_adc_ref_ena 
+   LANGNAME "Flag to enable ADC reference voltage calibration"
+   DISPLAYNAME "LC_V_ADC_REF_ENA"
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_W "-"
+   WERT 1
+END
+
+STUETZSTELLENVERTEILUNG ldp_fac_ti_sum_bal_ip_egy_bal 8
+*SST
+   LANGNAME ""
+   FUNKTION CYBL_Coord_Inj_Time_Cor_Fac_CYBL 
+   EINHEIT_X "-"
+   ST/X   -0.43399   -0.20001   -0.10001   -0.04999   0.04999   0.10001   
+   ST/X   0.20001   0.43399   
+END
+
+STUETZSTELLENVERTEILUNG ldp_fup_fac_ti_cor_iv_egy_rng_l 12
+*SST
+   LANGNAME "Multiplicative injection time correction factor for corrections in case of injector low lift depending on FUP"
+   FUNKTION Injr_needle_lift_adj__706S 
+   EINHEIT_X "hPa"
+   ST/X   4001.3   9997.9   15002.1   20001.0   29998.9   45001.0   
+   ST/X   59997.8   90002.0   120000.9   159997.7   199999.7   249999.7   
+END
+
+STUETZSTELLENVERTEILUNG ldp_fup_ip_egy_step_inj_cha_grd 6
+*SST
+   LANGNAME "Piezo injector energy charge and discharge gradient offset for a single step"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_X "hPa"
+   ST/X   4998.9   49999.9   99999.9   149999.8   199999.7   249999.7   
+END
+
+STUETZSTELLENVERTEILUNG ldp_n_32_ip_eoi_inj_upd_psn 6
+*SST
+   LANGNAME ""
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "rpm"
+   ST/X   512   992   1504   2016   2496   3488   
+END
+
+STUETZSTELLENVERTEILUNG ldp_n_32_ip_fac_add_pulse 7
+*SST
+   LANGNAME ""
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "rpm"
+   ST/X   992   1504   2240   3008   4000   5024   
+   ST/X   6016   
+END
+
+STUETZSTELLENVERTEILUNG ldp_n_id_nr_cyl_clc_red_inj 4
+*SST
+   LANGNAME ""
+   FUNKTION Application_Incidences__706N 
+   EINHEIT_X "rpm"
+   ST/X   0   0   0   0   
+END
+
+STUETZSTELLENVERTEILUNG ldp_t_dcha_ip_t_rls_dly 6
+*SST
+   LANGNAME ""
+   FUNKTION Final_Inj_Timing__7054 
+   EINHEIT_X "탎"
+   ST/X   80.0   100.0   130.0   160.0   200.0   220.0   
+END
+
+STUETZSTELLENVERTEILUNG ldp_tco_ip_fac_add_pulse 7
+*SST
+   LANGNAME ""
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "캜"
+   ST/X   -20.25   -9.75   0.00   20.25   39.75   60.00   
+   ST/X   90.00   
+END
+
+STUETZSTELLENVERTEILUNG ldp_tfu_inj_ip_egy_step_inj_cha 4
+*SST
+   LANGNAME "Piezo injector energy charge and discharge gradient offset for a single step"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_X "캜"
+   ST/X   -30.00   20.25   80.25   120.00   
+END
+
+STUETZSTELLENVERTEILUNG ldp_tfu_inj_ip_v_iv_max 6
+*SST
+   LANGNAME "Maximum allowed voltage on piezo stack before limiting"
+   FUNKTION Injr_needle_lift_control__7081 
+   EINHEIT_X "캜"
+   ST/X   -30.00   0.00   45.00   84.75   105.00   142.50   
+END
+
+STUETZSTELLENVERTEILUNG ldpm_prs_dec_inj_1_injr 6
+*SST
+   LANGNAME ""
+   FUNKTION C_7_INJR 
+   EINHEIT_X "hPa"
+   ST/X   5301.4   9997.9   40002.1   99999.9   140001.9   199999.7   
+END
+
+STUETZSTELLENVERTEILUNG ldpm_tecu_dcdc_pctl 6
+*SST
+   LANGNAME ""
+   FUNKTION Transfer_to_basic_sw__706K 
+   EINHEIT_X "캜"
+   ST/X   -48.00   -39.75   -9.75   0.00   69.75   142.50   
+END
+

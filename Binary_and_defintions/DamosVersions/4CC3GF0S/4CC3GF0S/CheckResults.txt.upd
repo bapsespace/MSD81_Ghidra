@@ -1,0 +1,21 @@
+BMW SW Reference.............. : 0044CC03GF0S              :  OK   : correct
+BMW Part Number............... : 000004576306              :  OK   : correct
+Diagnoseindex................. : 0000                      :  OK   : correct
+Variantenindex................ : 4131                      :  OK   : correct
+Lieferantennr................. : 04                        :  OK   : correct
+MSV-FSV-OSV-RES............... : FFFFFF000000000000FFFFFF  :  OK   : correct
+Variantenindex equal in SBOOT/CALIB............................... : OK
+
+:
+:
+Definition check file : D:\PDeS\D_4DC\GE1\INPUTS\DELTOOL_CHECKS_CUST_L4.DEF
+Customer name :   BMW
+Author :   uid06086
+Project release :   4DCGE1
+Date :   08.10.2008
+Calibration release :   4DCGE130
+Volcano release :   None
+Logistic data release :   None
+Output file :   C:\TEMP\DELIVERY\AUTODEL\CheckResults.txt.upd
+Delivery Tool Version : DELIVERYV440 V4.4.0
+

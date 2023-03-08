@@ -1,0 +1,76 @@
+;==========================================
+;Austausch-Datei
+;==========================================
+;
+;;ZL_System:        MSD81-6cyl
+;;ZL_Projekt:       MSD81-6cyl
+;;ZL_Referenz:      
+;
+;==========================================
+;Freigabe     BMW AG  Muenchen
+;==========================================
+;
+;;K_Stand:          17.05.2010
+;;K_File-Name:      4CC3JM0S
+;
+;Fahrzeugidentifikation
+;;K_F1:             Muster-SW KW_20/2010
+;;K_F2:             
+;;K_F3:             
+;;K_F4:             
+;
+;Applikation
+;;KA_Bearbeiter:    
+;;KA_Abteilung:     EA-
+;;KA_Telefon:       089/382-
+;;KA_Freigabedatum: TT.MM.JJ
+;
+;Konstruktion
+;;KK_Bearbeiter:    
+;;KK_Abteilung:     EA-
+;;KK_Telefon:       089/382-
+;;KK_Freigabedatum: TT.MM.JJ
+;
+;Verifikation
+;;KV_Bearbeiter:    
+;;KV_Abteilung:     EA-
+;;KV_Telefon:       089/382-
+;;KV_Freigabedatum: TT.MM.JJ
+;
+;Verwendung
+;;K_V1:             Muster-SW KW_20/2010
+;;K_V2:             Progstand:  4CC3JM0S
+;
+;==========================================
+;Freigabe     SiemensVDO  Regensburg
+;==========================================
+;
+;;Z_Stand:          17.05.2010
+;;Z_File-Name:      4DCJM1Y0.s19
+;
+;Applikation
+;;ZA_Bearbeiter:    Matthias Kratzsch
+;;ZA_Abteilung:     SV P GS Sys ES BMW
+;;ZA_Telefon:       0941/790-61355
+;;ZA_Freigabedatum: 17.05.2010
+;
+;Software-Entwicklung
+;;ZS_Bearbeiter:    Johann Stollner
+;;ZS_Abteilung:     P ES E
+;;ZS_Telefon:       0941/790-4152
+;;ZS_Freigabedatum: 17.05.2010
+;
+;EOL-Programmierung
+;;ZE_Bearbeiter:    
+;;ZE_Abteilung:     
+;;ZE_Telefon:       
+;;ZE_Freigabedatum: 
+;
+;Verwendung
+;;Z_V1:             VMECUHN:  4594989
+;;Z_V2:             
+;
+;Logistik
+;;ZL_Freigabenummer: 
+;
+;==========================================
